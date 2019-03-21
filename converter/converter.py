@@ -60,13 +60,18 @@ def get_params():
 
 
 def main():
-    # input data parameters
-    data_path, data_uri, output_path = get_params()
 
     # parse converter arguments
     args = get_args()
     entry_filename = os.path.splitext(args.files[0])[0]
     entry_filename_dir = os.path.dirname(os.path.abspath(args.files[0]))
+
+    # input data parameters
+    try:
+        data_path, data_uri, output_path = get_params()
+    except Exception as e:
+        print('Arguments error, {}'.format(e))
+        sys.exit(1)
 
     # Convert Jupyter Notebook files to python3 files
     try:
