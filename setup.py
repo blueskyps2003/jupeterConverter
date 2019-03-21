@@ -2,7 +2,7 @@
 
 from setuptools import setup
 setup(
-    name='converter2py',
+    name='convert2py',
     url='https://github.com/jladan/package_demo',
     author='Eric Pang',
     packages=['converter'],
