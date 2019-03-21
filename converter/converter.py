@@ -120,7 +120,7 @@ def main():
                 else:
                     time.sleep(2)
                     try:
-                        zip_folder_name = os.path.join(entry_filename_dir, os.pardir, "taskFiles")
+                        zip_folder_name = os.path.join(entry_filename_dir, os.pardir, "task_files")
                         print(zip_folder_name)
                         if not os.path.exists(zip_folder_name):
                             os.makedirs(zip_folder_name)
