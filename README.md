@@ -16,8 +16,6 @@ which can be uploaded directly to Orion platform.
 
 ### How to run
 
-```
-=======
 Simple and easy to run, like usual pip package installation. 
 
 ```
